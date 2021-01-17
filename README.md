@@ -96,6 +96,22 @@ I don't know about you, but I find a lot of templating syntax in other framework
 <h1 else>I am falsy</h1>
 ```
 
+#### Computed Properties
+
+If you have worked with Vue before, you might be familiar with the concept of computed properties. A getter function that returns a value and inside of it, can deal with multiple concatenated values returned as a string. In Aurelia, dependencies are automatically tracked, so you can write getter functions like the following and not have to worry about specifying dependencies.
+
+```
+export class MyComponent {
+    private firstName = 'John';
+    private lastName = 'Smith';
+    
+    // Whenever firstName or lastName change, this getter will be updated
+    get myName() {
+      return `${this.firstName} ${this.lastName}`;
+    }
+}
+```
+
 #### Two-way Binding
 
 For those who have worked with React, you will already know that it doesn't support two-way binding. While two-way binding isn't always needed and better options exist, two-way binding which also exists in Svelte, Angular and Vue can be a gamechanger when working with forms. Instead of littering your template with callbacks, you bind to properties. By default, form elements are two-way binding.
