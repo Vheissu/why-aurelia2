@@ -21,3 +21,5 @@ It wasn't the fact Aurelia was terrible, it was quite forward thinking and the m
 Before I worked with Aurelia, I too, had worked with React and fell under its spell. React at the time compared to everything else was blazingly fast, compared to the likes of AngularJS, Backbone and other now outdated options, React was revolutionary.
 
 The original vision of Aurelia as it enters its second major version is still the same, the syntax for templating and its core philopshy of convention over configuration as well as abidance by web standards remains the same. Rob Eisenberg the creator of Aurelia envisioned a future of development where frameworks were accompanients of web standards, not custom template parsers or anything else too foreign.
+
+This is not to say that Aurelia is perfect, nor is it to say that Aurelia is better than everything else. I truly believe that no matter what you choose to work with, what matters most is whether your chosen framework or library does everything you want it too and if it makes the developer experience better.
