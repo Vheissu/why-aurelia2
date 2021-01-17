@@ -146,3 +146,9 @@ This is not to say that Aurelia is the fastest and best performing out there. Ho
 While other frameworks and libraries persue their own ways of doing things, ignoring the problems that web bodies like WHATWG and W3C have already solved, Aurelia leans into them. The less that Aurelia can do and more the web can do, the better things will be for everyone.
 
 Whether it's support for Shadow DOM or Web Components, Aurelia supports it. Make requests to your API using Fetch, write components that are compatible with non-framework like approaches. Writing Aurelia apps will never feel like coding inside of a walled garden.
+
+### Makes No Assumptions
+
+Don't you hate it when framework and library authors tell you that things have to be done a specific way? I have never been one for rules, but sometimes rigid options (despite providing consistency) can slow you down. Aurelia doesn't tell you the right or wrong way to do things, like every flexible tool in the ecosystem, a set of sensible defaults should be provided, but shouldn't be strictly forced onto users.
+
+This is why every aspect of Aurelia offers flexibility for when you want and need it, but doesn't force you to write things a certain way or use specific API's.
