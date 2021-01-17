@@ -23,3 +23,25 @@ Before I worked with Aurelia, I too, had worked with React and fell under its sp
 The original vision of Aurelia as it enters its second major version is still the same, the syntax for templating and its core philopshy of convention over configuration as well as abidance by web standards remains the same. Rob Eisenberg the creator of Aurelia envisioned a future of development where frameworks were accompanients of web standards, not custom template parsers or anything else too foreign.
 
 This is not to say that Aurelia is perfect, nor is it to say that Aurelia is better than everything else. I truly believe that no matter what you choose to work with, what matters most is whether your chosen framework or library does everything you want it too and if it makes the developer experience better.
+
+## Advantages
+
+Aurelia doesn't offer anything new or revolutionary when you truly break down what makes it great. Many of my favourite things about Aurelia are things that are not proprietary to Aurelia at all. How its templating is just HTML, your components are Javascript classes, its support for Web Components and Shadow DOM.
+
+### Easy to learn
+
+I am not just talking about a simple hello world app here. All frameworks and libraries promote that they are easy to learn, leaving out the fact that many of these options don't give you everything you need out-of-the-box, requiring you to install packages to give you basic features like routing or ability to make API requests. There are no custom component formats with non-standard file extensions, Aurelia components are Javascript and HTML out-of-the-box.
+
+This is a simple component that displays a first and last name (whatever we provide to the component), without even needing any Javascript whatsoever. This component is called `display-name.html`:
+
+```
+<bindable name="firstName"></bindable>
+<bindable name="lastName"></bindable>
+
+<h2>${firstName} ${lastName}</h2>
+```
+
+To use this component we can write: `<display-name first-name="John" last-name="Smith"></display-name>`
+```
+
+As you can see, no HTML supersets to be found. This is HTML with one difference, the string interpolation syntax `${}` which you might be familiar if you have ever worked with [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) before. It's the same dollar sign and curly braces, you can even use expressions inside of them like this `${2 + 2}`
