@@ -69,6 +69,33 @@ export class MyComponent {
 <button type="button">Clicked ${count} ${count == 1 ? 'time' : 'times'}</button>
 ```
 
+#### HTML Syntax
+
+I don't know about you, but I find a lot of templating syntax in other frameworks and libraries to be kind of ugly. Why do we need to use colons and hashes all over the place? Why can't our HTML just resemble HTML with a few little enhancements to make certain features (like binding) work?
+
+**Repeating over a collection of data using repeat.for**
+
+```
+<ul>
+  <li repeat.for="item of items">${item.name}</li>
+</ul>
+```
+
+**If statements using if.bind**
+
+```
+<h1 if.bind="booleanValue">I am truthy</h1>
+```
+
+```
+<h1 if.bind="!booleanValue">I am falsy</h1>
+```
+
+```
+<h1 if.bind="booleanValue">I am truthy</h1>
+<h1 else>I am falsy</h1>
+```
+
 #### Two-way Binding
 
 For those who have worked with React, you will already know that it doesn't support two-way binding. While two-way binding isn't always needed and better options exist, two-way binding which also exists in Svelte, Angular and Vue can be a gamechanger when working with forms. Instead of littering your template with callbacks, you bind to properties. By default, form elements are two-way binding.
