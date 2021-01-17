@@ -45,6 +45,41 @@ To use this component we can write: ``<display-name first-name="John" last-name=
 
 As you can see, no HTML supersets to be found. This is HTML with one difference, the string interpolation syntax ``${}`` which you might be familiar if you have ever worked with [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) before. It's the same dollar sign and curly braces, you can even use expressions inside of them like this ``${2 + 2}``
 
-Unlike other frameworks and libraries which abstract the DOM, Aurelia is closer to the metal. There is no virtual DOM, nothing custom whatsoever. Templating in Aurelia relies on the browsers templating engine to parse and execute our templates.
+Unlike other frameworks and libraries which abstract the DOM, Aurelia is closer to the metal. There is no virtual DOM, nothing custom whatsoever. Templating in Aurelia relies on the browsers templating engine to parse and execute our templates. Want to listen to a click event on a button? `<button type="button" click.trigger="myCallback()"></button>` and `myCallback` gets defined inside of your view-model.
 
-Want to listen to a click event on a button? `<button type="button" click.trigger="myCallback()"></button>` and `myCallback` gets defined inside of your view-model.
+### Syntax
+
+What all frameworks and libraries boil down to is their syntax, how flexible is the templating system? Do I need a PhD to understand how to loop through some data and react to some changes?  This is where Aurelia sets itself apart from other frameworks and libraries. Aurelia is built from the ground up with developer experience (DX) in mind, from how you build applications to how you ship them.
+
+#### Reactive Assignments
+
+When a value changes, you want that change to be reflected in your view.
+
+```
+export class MyComponent {
+  count = 0;
+  
+  increment() {
+    this.count = this.count + 1;
+  }
+}
+```
+
+```html
+<button type="button">Clicked ${count} ${count == 1 ? 'time' : 'times'}</button>
+```
+
+#### Two-way Binding
+
+For those who have worked with React, you will already know that it doesn't support two-way binding. While two-way binding isn't always needed and better options exist, two-way binding which also exists in Svelte, Angular and Vue can be a gamechanger when working with forms. Instead of littering your template with callbacks, you bind to properties. By default, form elements are two-way binding.
+
+```
+export class MyComponent {
+  name = '';
+}
+```
+
+```html
+<input value.bind="name" placeholder="What should we call you?">
+<p>Hello ${name != '' ? name : 'Mysterious being'}!</p>
+```
