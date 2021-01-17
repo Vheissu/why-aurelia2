@@ -28,6 +28,14 @@ This is not to say that Aurelia is perfect, nor is it to say that Aurelia is bet
 
 Aurelia doesn't offer anything new or revolutionary when you truly break down what makes it great. Many of my favourite things about Aurelia are things that are not proprietary to Aurelia at all. How its templating is just HTML, your components are Javascript classes, its support for Web Components and Shadow DOM.
 
+#### Write Less, Do More
+
+Since version 1, Aurelia has strongly adhered to the principle: write less, do more. This is because Aurelia follows a convention over configuration approach. If you have worked with Angular before, then you might know what I am talking about. Aurelia will assume some things by default about how you might want to build your apps and in about 95% of the cases I have encountered, you never have to change them.
+
+A lot of other options out there love to make this claim, but then they make you configure modules, they make you learn some obscure templating language or HTML variant, then you have to become familiar with their CLI and way of architecting your apps. With Aurelia, it gives you the basics you need and then just gets out of your way. No gimmicks, just a simple development experience.
+
+Aurelia is intuitive and I have first-hand experience training junior developers as well as senior developers in Aurelia. More often than not, you will see developers regardless of their skill level pushing code to production in a matter of days not months or weeks. There is just so much less to learn with Aurelia than other frameworks or libraries.
+
 ### Easy to learn
 
 I am not just talking about a simple hello world app here. All frameworks and libraries promote that they are easy to learn, leaving out the fact that many of these options don't give you everything you need out-of-the-box, requiring you to install packages to give you basic features like routing or ability to make API requests. There are no custom component formats with non-standard file extensions, Aurelia components are Javascript and HTML out-of-the-box.
