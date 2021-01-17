@@ -41,7 +41,10 @@ This is a simple component that displays a first and last name (whatever we prov
 <h2>${firstName} ${lastName}</h2>
 ```
 
-To use this component we can write: `<display-name first-name="John" last-name="Smith"></display-name>`
-```
+To use this component we can write: ``<display-name first-name="John" last-name="Smith"></display-name>``
 
-As you can see, no HTML supersets to be found. This is HTML with one difference, the string interpolation syntax `${}` which you might be familiar if you have ever worked with [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) before. It's the same dollar sign and curly braces, you can even use expressions inside of them like this `${2 + 2}`
+As you can see, no HTML supersets to be found. This is HTML with one difference, the string interpolation syntax ``${}`` which you might be familiar if you have ever worked with [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) before. It's the same dollar sign and curly braces, you can even use expressions inside of them like this ``${2 + 2}``
+
+Unlike other frameworks and libraries which abstract the DOM, Aurelia is closer to the metal. There is no virtual DOM, nothing custom whatsoever. Templating in Aurelia relies on the browsers templating engine to parse and execute our templates.
+
+Want to listen to a click event on a button? `<button type="button" click.trigger="myCallback()"></button>` and `myCallback` gets defined inside of your view-model.
