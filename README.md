@@ -28,7 +28,7 @@ This is not to say that Aurelia is perfect, nor is it to say that Aurelia is bet
 
 Aurelia doesn't offer anything new or revolutionary when you truly break down what makes it great. Many of my favourite things about Aurelia are things that are not proprietary to Aurelia at all. How its templating is just HTML, your components are Javascript classes, its support for Web Components and Shadow DOM.
 
-#### Write Less, Do More
+### Write Less, Do More
 
 Since version 1, Aurelia has strongly adhered to the principle: write less, do more. This is because Aurelia follows a convention over configuration approach. If you have worked with Angular before, then you might know what I am talking about. Aurelia will assume some things by default about how you might want to build your apps and in about 95% of the cases I have encountered, you never have to change them.
 
@@ -134,3 +134,15 @@ export class MyComponent {
 <input value.bind="name" placeholder="What should we call you?">
 <p>Hello ${name != '' ? name : 'Mysterious being'}!</p>
 ```
+
+### It's Fast!
+
+While Aurelia doesn't focus on trying to win benchmarks which are more often than not, not truly reflective of real world development environments, Aurelia is no slouch. Despite the fact it is a fully-featured batteries included framework, it is fast. You won't find any DOM abstractions like Virtual DOM's here. Aurelia works closer to the metal than some other options and as a result, it offers the kind of performance you can visibly see.
+
+This is not to say that Aurelia is the fastest and best performing out there. However, it's not slow and there are no perceived issues with performance. Look beyond vanity benchmarks for the real story.
+
+### Alignment With Web Standards
+
+While other frameworks and libraries persue their own ways of doing things, ignoring the problems that web bodies like WHATWG and W3C have already solved, Aurelia leans into them. The less that Aurelia can do and more the web can do, the better things will be for everyone.
+
+Whether it's support for Shadow DOM or Web Components, Aurelia supports it. Make requests to your API using Fetch, write components that are compatible with non-framework like approaches. Writing Aurelia apps will never feel like coding inside of a walled garden.
