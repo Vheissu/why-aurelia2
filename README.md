@@ -55,6 +55,12 @@ As you can see, no HTML supersets to be found. This is HTML with one difference,
 
 Unlike other frameworks and libraries which abstract the DOM, Aurelia is closer to the metal. There is no virtual DOM, nothing custom whatsoever. Templating in Aurelia relies on the browsers templating engine to parse and execute our templates. Want to listen to a click event on a button? `<button type="button" click.trigger="myCallback()"></button>` and `myCallback` gets defined inside of your view-model.
 
+### Beginner friendly 
+
+Aurelia is one of the most beginner friendly frameworks around today. Because you can leverage existing CSS, HTML and JavaScript knowledge, learning to build Aurelia applications is so much easier.
+
+If you are familiar with React, then you would know if differs from conventional HTML in some ways (className instead of class) 
+
 ### Syntax
 
 What all frameworks and libraries boil down to is their syntax, how flexible is the templating system? Do I need a PhD to understand how to loop through some data and react to some changes?  This is where Aurelia sets itself apart from other frameworks and libraries. Aurelia is built from the ground up with developer experience (DX) in mind, from how you build applications to how you ship them.
